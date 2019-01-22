@@ -1,0 +1,13 @@
+f(){
+  echo "From function: f"
+  g
+
+}
+
+g()
+{
+  echo "From function: g"
+}
+
+f
+g

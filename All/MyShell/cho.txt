@@ -1,0 +1,23 @@
+f()
+{
+    echo -n "Enter a Number: "
+    read Num
+
+
+f1=0
+f2=1
+
+echo "The Fib sequence for $Num is: "
+
+for (( i=1;i<=Num;i++ ))
+do
+
+     fn=$((f1+f2))
+     f1=$f2
+     f2=$fn
+
+done
+echo "$f1"
+
+}
+f

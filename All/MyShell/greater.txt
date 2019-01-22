@@ -1,0 +1,1 @@
+echo “$n Enter first number:”read a; echo “$n Enter second number:” read b; if [ $a = $b ]then echo “$n Both are equal”; elif [ $a-gt $b ]then echo “$a is greater”;else echo “$b is greater”; fi

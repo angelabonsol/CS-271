@@ -1,0 +1,9 @@
+question_1(){
+for i in 3 4
+do
+  echo $i
+done
+}
+
+question_1
+question_1

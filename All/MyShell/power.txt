@@ -1,0 +1,12 @@
+echo Enter an integer for the base:
+read base
+
+echo Enter a positive integer for the power:
+read power
+
+for ((i=1, exp=base; i<power ; i++))
+do ((exp *= base))
+
+done
+
+echo The result of $base to $power is "$exp"

@@ -1,0 +1,11 @@
+echo ”Enter a number”
+read a
+
+num=$(( $a % 2 ))
+
+if (( $num == 0 ))
+then
+  echo “$a is even”
+else
+  echo “$a is odd”
+fi

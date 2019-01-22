@@ -1,0 +1,38 @@
+if [ "$#" -lt 1 ]; then
+	echo "Enter a positive integer"
+	read num
+elif [ "$#" -eq 1 ]; then
+	num=$1
+else
+	echo "Error: Too many input"
+	exit 1
+fi
+
+if [ "$num" -le 1 ]; then
+	echo $num "is NOT prime."
+	exit 1
+elif [ "$num" -le 3 ]; then
+	echo $num "is prime."
+	exit 0
+elif [ $(($num % 2)) -eq 0 ]; then
+	echo $num "is NOT a prime number, it is divisible by 2"
+	exit 1
+elif  [ $(($num % 3)) -eq 0 ]; then
+	echo $num "is NOT a prime number, it is divisible by 3"
+	exit 1
+fi
+
+k=5
+while [ $((k*k)) -le $num ]; do
+	if [ $(($num%$k)) -eq 0 ]; then
+		echo $num "is NOT prime."
+		exit 1
+	elif [ $(($num%$(($k+2)))) -eq 0 ]; then
+		echo $num "is NOT prime."
+		exit 1
+	fi
+	k=$(($k+6))
+done
+
+echo $num "is prime."
+exit 0

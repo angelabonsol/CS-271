@@ -1,0 +1,14 @@
+sum=0
+avg=0
+echo "Enter a number or zero to stop"
+read x
+while ((x != 0))	# or we can write: while [ $x -ne 0 ]
+do
+  sum=$((sum + x))
+  count=$((count +1))
+  avg=$(( sum / count ))
+  echo "Enter a number or zero to stop"
+  read x
+done
+echo "The sum of the numbers is: $sum"
+echo "average number is: $avg"

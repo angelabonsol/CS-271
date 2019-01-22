@@ -1,0 +1,14 @@
+add()
+{
+  local z
+  echo "Enter a number"
+  read x
+  echo "Enter another number"
+  read y
+  z=$((x+y))
+  echo "The sum of $x and $y is: $z"
+}
+
+add
+
+echo "The sum of $x and $y is: $z"

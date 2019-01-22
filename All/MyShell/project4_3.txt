@@ -1,0 +1,12 @@
+p=1
+question_3(){
+
+for ((i=2; i <= 3; i++))
+do
+  p=$((p * i))
+done
+echo "2 * 3 = $p"
+
+}
+question_3
+question_3

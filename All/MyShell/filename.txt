@@ -1,0 +1,3 @@
+echo “Enter the name of a file in this directory”
+read n
+wc -w $n

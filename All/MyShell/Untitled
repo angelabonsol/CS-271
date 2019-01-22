@@ -1,0 +1,7 @@
+age(){
+if $n < 21
+echo "You are not over 21 and cannot drink"
+el if $n > 21
+echo "You are over 21 and can drink"
+}
+age 34

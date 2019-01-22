@@ -1,0 +1,4 @@
+for i in "Hello world" $((1 * 2)) "Have a nice day"
+do
+  echo $i
+done

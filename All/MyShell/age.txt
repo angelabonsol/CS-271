@@ -1,0 +1,13 @@
+age()
+{
+    if (( $1 < 22 ))
+      then
+      echo "You are not over 21 and cannot drink."
+    else
+      echo "You are over 21 and can drink."
+    fi
+
+}
+
+age 40
+age 13

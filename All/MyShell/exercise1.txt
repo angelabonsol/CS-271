@@ -1,0 +1,1 @@
+sum=0for i in 1 3 4do  sum=$((sum + i3))doneecho "sum=$sum"

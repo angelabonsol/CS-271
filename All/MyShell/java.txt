@@ -1,0 +1,17 @@
+prime=true
+
+echo Enter a positive integer
+read n
+
+for ((i=2; i <n; i++))
+if [ $n % $i -eq 0 ]
+  prime=false
+fi
+done
+
+if(prime=true)
+echo $n is prime
+
+else
+echo $n is NOT prime
+fi
